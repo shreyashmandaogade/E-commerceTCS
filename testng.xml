@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TCS_demo_E-commerce_Mangagement_System">
+
+	<listeners>
+		<listener class-name="com.listeners.ListenerUtility"></listener>
+	</listeners>
+
+	<test name="E-Commerce_Site_Test">
+		<parameter name="browser" value="chrome"></parameter>
+		
+		<classes>
+			<class name="testcases.TC_LoginTest_01.java" />
+			<class name="testcases.TC_Register_Test_02.java" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
